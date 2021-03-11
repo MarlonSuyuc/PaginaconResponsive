@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #036;
+  font-family: Arial;
+}
+.contenedor {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f3c560;
+  overflow: hidden; /*esto es para quitarle los puntos al li*/
+}
+header {
+  background: #eb4a33;
+  margin: 20px 0;
+}
+header h1 {
+  color: rgb(54, 71, 224);
+  padding: 20px 0;
+  text-align: center;
+}
+.main {
+  width: 70%;
+  background: rgb(31, 69, 175);
+  padding: 20px;
+  float: left; /*Esto es pra que uno se ponga al lado del otro*/
+  box-sizing: border-box;
+}
+.main img {
+  width: 100%;
+  height: auto;
+}
+aside {
+  width: 30%;
+  padding: 20px;
+  background: rgb(25, 135, 168);
+  float: left;
+}
+footer {
+  clear: both;
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  background: #000;
+  margin-bottom: 50px;
+}
+
+/**********************************************************************************************************************************************/
+@media screen and (max-width: 700px) {
+  body {
+    /*cuando llegue a 700px el body  cambiara su color de azul a verde*/
+    background: #91e374;
+  }
+  .main {
+    width: 100%; /*cuando llegue a 700px el main ocupara el 100% de la pantalla*/
+  }
+  aside {
+    width: 100%; /*cuando llegue a 700px el aside se colocara a bajo del main*/
+  }
+}
+
+/**********************************************************************************************************************************************/
+@media screen and (max-width: 600px) {
+  /*Aqui podemos colocar los pixeles de los celulares para haci adaptarlos a su medida*/
+  .contenedor {
+    /*cuando llegue a 600px el contenedor ocupara toda la pantalla, esto ya es como para celulares*/
+    width: 100%;
+  }
+  aside {
+    display: none; /*Esto es para cuando llegue a 600 px el aside desaparezca*/
+  }
+}
